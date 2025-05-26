@@ -24,10 +24,8 @@ transform { fileInfo ->
             names =
                 listOf(
                     Node.Expression.NameExpression(" "),
-                    Node.Expression.NameExpression("io"),
-                    Node.Expression.NameExpression("pleo"),
-                    Node.Expression.NameExpression("commsgateway"),
-                    Node.Expression.NameExpression("requestmodels"),
+                    Node.Expression.NameExpression("com"),
+                    Node.Expression.NameExpression("example"),
                     Node.Expression.NameExpression("requests"),
                     Node.Expression.NameExpression("NotificationRequest"),
                 ),

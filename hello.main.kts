@@ -21,9 +21,20 @@ transform { fileInfo ->
     // Create the new import
     val newImport =
         Node.ImportDirective(
-            names = listOf(Node.Expression.NameExpression("io.pleo.commsgateway.requestmodels.requests.NotificationRequest")),
+            names =
+                listOf(
+                    Node.Expression.NameExpression(" "),
+                    Node.Expression.NameExpression("io"),
+                    Node.Expression.NameExpression("pleo"),
+                    Node.Expression.NameExpression("commsgateway"),
+                    Node.Expression.NameExpression("requestmodels"),
+                    Node.Expression.NameExpression("requests"),
+                    Node.Expression.NameExpression("NotificationRequest"),
+                ),
             aliasName = null,
         )
+    newImport.supplement.extrasBefore =
+        listOf(Node.Extra.Whitespace(text = "\n"))
 
     // Ensure all imports are on separate lines by putting them in separate entries
     val modifiedTree =
